@@ -1,0 +1,4 @@
+<launch>
+   <node name="import_rgb_node" pkg="panda_vision" type="import_rgb_node.py" output="screen" />
+ </launch>
+  

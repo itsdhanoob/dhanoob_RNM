@@ -1,0 +1,3 @@
+<launch>
+   <node name="cv_bridge_demo" pkg="panda_vision" type="cv_bridge_demo.py" output="screen" />
+</launch>
