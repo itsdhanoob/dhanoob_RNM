@@ -1,0 +1,9 @@
+<launch>
+    <!-- Start another launch file (to start the simulation environment) -->
+    <include file="$(find franka_example_controllers)/launch/joint_position_example_controller_sim.launch" />
+    <!-- Start the cpp program with parameters -->
+    <node pkg="panda_joint_reader" type="panda_joint_reader_cpp_node" output="screen" name="panda_joint_reader_cpp_node">
+        <param name="topic_name" value="/joint_states" />
+        <param name="queue_size" value="1" />
+    </node>
+</launch>

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<launch>
+
+    <!--include file="$(find franka_example_controllers)/launch/joint_position_example_controller_sim.launch" -->
+
+	<param name="operation_mode" value="actual"/>
+    	<param name="topic_joint_command" value="/joint_position_example_controller/joint_command" />
+    	<param name="topic_joint_states" value="/franka_state_controller/joint_states_desired" />
+    	
+</launch>

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<launch>
+
+    <!--include file="$(find franka_example_controllers)/launch/joint_position_example_controller_sim.launch" -->
+
+	<param name="operation_mode" value="sim"/>
+    <param name="topic_joint_command" value="/joint_position_example_controller_sim/joint_command" />
+    <param name="topic_joint_states" value="/joint_states" />
+
+	<!-- <node name="dummy_publisher" pkg="kinematic_robot" type="dummy_publisher.py" /> -->
+
+
+</launch>

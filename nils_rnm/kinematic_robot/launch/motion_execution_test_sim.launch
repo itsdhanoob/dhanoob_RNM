@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<launch>
+    <include file="$(find franka_example_controllers)/launch/joint_position_example_controller_sim.launch" />
+
+    <param name="/joint_state_topic" value="/joint_states" />
+    <param name="/joint_command_topic" value="/joint_position_example_controller_sim/joint_command" />
+    <param name="max_dist_between_supports" value="0.01" />
+    <param name="/max_dist_between_supports_insertion" value="0.1" />
+
+    <node name="process_manager" pkg="kinematic_robot" type="process_manager.py" />
+    <node name="dummy_cv" pkg="kinematic_robot" type="dummy_cv.py" />
+    
+</launch>
+
+
